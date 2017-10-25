@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Register</h2>
+
+<form action="/Home/SaveUserInfo" method="post">
+    First Name: <input type="text" name="ClientFirstName" /><br />
+    Last Name: <input type="text" name="ClientLastName" /><br />
+    Email: <input type="email" name="ClientEmail" /><br />
+    Phone Number: <input type="text" name="PhoneNumber" /><br />
+    Password:<input type="text" name="Password" /><br />
+    <input type="submit" value="Register" />
+</form>
